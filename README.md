@@ -25,14 +25,12 @@
 `srp = Screen Recording Privilege`
 `fda = Full Disk Access`
 
- ```mermaid
- 
-graph TD
-    A[赋权] --> B[完全磁盘访问]
-    A[赋权] --> C[屏幕录制]
-    D[复制fda、srp文件备份]
-    B-->D
-    C-->D
-    D-->F[sudo执行crashX.sh]
-    F-->G[取消赋权]
+```mermaid
+ graph TD;
+    A[赋权]-->B[完全磁盘访问];
+    A[赋权]-->C[屏幕录制];
+    B-->D[制作fda与srp文件备份];
+    C-->D[制作fda与srp文件备份];
+    D-->F[尝试执行crashX.sh文件];
+    F-->G[取消赋权];
 ```
