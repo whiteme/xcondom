@@ -1,10 +1,10 @@
 # Mac OS
 ## 进入rootless 模式
-> ###重启电脑 
+> ### 重启电脑 
 >>当听到重启提示音时 <kbd>Command</kbd> + <kbd>R</kbd>
 出现进度条是 没有 ***苹果logo***  表示成功进入 恢复模式
 
-> ###执行命令行
+> ### 执行命令行
 >> 在图形界面 上方菜单找到 ***终端*** 
 执行 
 `csrutil disable`
@@ -26,7 +26,6 @@
 `fda = Full Disk Access`
 
  ```mermaid
- 
 graph TD
     A[赋权] --> B[完全磁盘访问]
     A[赋权] --> C[屏幕录制]
