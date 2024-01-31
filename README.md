@@ -1,5 +1,5 @@
 # Mac OS
-## 1. rootless 模式 & TCC.db
+## 1. rootless 模式 & TCC.db  & Info.plist
 > ### 重启电脑 
 >>当听到重启提示音时 <kbd>Command</kbd> + <kbd>R</kbd>
 >>
@@ -24,6 +24,11 @@
 >> 在此目录下执行 `sudo sqlite3 TCC.db`
 >> 
 >> `access` 表 `client=${ooxx}` 即目标记录 ，`auth_value`为配置值
+
+> ### Info.plist
+>> 几个关键的app(agent , helper[控制台ui],manager)
+>> 修改Info.plist `<key>CFBundleIdentifier</key>` 与 `TCC.db的access表中的client` 对应关系
+>> 也可以满足权限的灵活使用
 
 ## 2. fda  与 srp
 ### 不修改TCC.db的情况下，可模拟授权
